@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Заполнение формы</title>
+  </head>
+  <body>
+    <form action="/save" method="POST">
+      <fieldset>
+        Пункт проката:
+        <select name="town" id="s1">
+          <option value="k1">Проспект Ленина 20</option>
+          <option value="k2">Зайцева 13</option>
+        </select>
+        <br />
+        <p>
+          Выберите дату получения:
+          <input
+            type="date"
+            name="data"
+            value="2021-12-14"
+            max="2021-12-29"
+            min="2021-12-14"
+          />
+        </p>
+        <p>
+          Выберите время для получения:
+          <input
+            type="time"
+            name="times"
+            value="07:00"
+            min="7:00"
+            max="21:00"
+          />
+        </p>
+        <br />
+        <label for="name">Имя: </label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <label for="tel">Телефон (Пример: 89200243522): </label>
+        <input type="text" id="tel" name="tel" />
+        <br />
+        <input type="submit" value="Зарезервировать велосипед" />
+      </fieldset>
+    </form>
+  </body>
+</html>
